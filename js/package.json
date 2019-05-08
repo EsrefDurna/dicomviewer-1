@@ -4,9 +4,9 @@
   "description": "Place this app in **nextcloud/apps/**",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prebuild": "npm install",
+    "prebuild": "npm install --no-audit",
     "lint": "eslint .",
-    "build": "npm run lint && webpack"
+    "build": "webpack"
   },
   "author": "Aysel Afsar",
   "license": "AGPL-3.0-only",
