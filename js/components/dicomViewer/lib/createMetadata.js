@@ -8,12 +8,12 @@ export default function createMetadata(wadouri, dataSet, studies) {
     const patientName = dataSet.string('x00100010');
     const patientId = dataSet.string('x00100020');
     if (!patientId) {
-        return;
+        //return;        
     }
 
     const studyInstanceUid = dataSet.string('x0020000d');
     if (!studyInstanceUid) {
-        return;
+        //return;
     }
     const studyDate = dataSet.string('x00080020');
     const studyTime = dataSet.string('x00080030');
